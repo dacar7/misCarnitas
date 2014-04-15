@@ -1,0 +1,17 @@
+<div class="page-header">
+  <h1>Mis Carnitas <small> de Campi <span class="glyphicon glyphicon-glass"></span></small></h1>
+</div>
+
+Tipos de Carne: <select ng-model="selected.m" ng-options="m.nombre for m in tipos" class="form-control"></select>
+<br>
+<div class="input-group">
+  <span class="input-group-addon">#</span>
+  <input type="text" class="form-control" placeholder="Cantidad" ng-model="nCantidad">
+</div>
+<br>
+
+<input type="date" class="form-control" placeholder="Ingrese la fecha de vencimiento" ng-model="dFecha">
+<br>
+<div align="center"><button class="btn btn-primary" ng-click="guardarCarnita()">Agregar</button></div>  
+
+{{inventario}}
